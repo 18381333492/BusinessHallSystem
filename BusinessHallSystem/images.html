@@ -1,0 +1,18 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+    <title>图片压缩测试</title>
+</head>
+<body>
+ <form enctype="multipart/form-data" method="post" action=UploadForm.ashx>
+    <input type="file" name="picture" />
+</form>
+<button>上传</button>
+</body>
+</html>
+<script src="Scripts/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script>
+    $('button').click(function () {
+        $('form').submit();
+    });
+</script>

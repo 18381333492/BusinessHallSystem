@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Lib4NetLog>
+  <Appender name="FileAppender" level="All" source="Web" 
+            type="Lib4Net.Logs.Appenders.FileAppender">
+    <param name="File" value="~\logs\%sr\%l\%y-%m-%d\%h.log"/>
+    <param name="DateFormat" value="YYYYMMddhhmmss"/>
+    <param name="MaxFileSize" value="1M"/>
+    <layouts>
+      <layout level="Fatal">[%yy-%mm-%dd %h:%mi:%s][%threadid] %message%br%e%br%trace%br</layout>
+      <layout level="Error">[%yy-%mm-%dd %h:%mi:%s][%threadid] %message%br%e%br%trace%br</layout>
+      <layout level="Debug">[%yy-%mm-%dd %h:%mi:%s][%threadid] %message%br</layout>
+      <layout level="Info">[%yy-%mm-%dd %h:%mi:%s][%threadid] %message%br</layout>
+    </layouts>
+  </Appender>
+  
+  <Appender name="FileAppender" level="All" source="dapper"
+          type="Lib4Net.Logs.Appenders.FileAppender">
+    <param name="File" value="~\logs\%sr\%l\%y-%m-%d\%h.log"/>
+    <param name="DateFormat" value="YYYYMMddhhmmss"/>
+    <param name="MaxFileSize" value="1M"/>
+    <layouts>
+      <layout level="Fatal">[%yy-%mm-%dd %h:%mi:%s][%threadid] %message%br%e%br%trace%br</layout>
+      <layout level="Error">[%yy-%mm-%dd %h:%mi:%s][%threadid] %message%br%e%br%trace%br</layout>
+      <layout level="Debug">[%yy-%mm-%dd %h:%mi:%s][%threadid] %message%br</layout>
+      <layout level="Info">[%yy-%mm-%dd %h:%mi:%s][%threadid] %message%br</layout>
+    </layouts>
+  </Appender>
+
+  <Appender name="FileAppender" level="All" source="WeChat"
+         type="Lib4Net.Logs.Appenders.FileAppender">
+    <param name="File" value="~\logs\%sr\%l\%y-%m-%d\%h.log"/>
+    <param name="DateFormat" value="YYYYMMddhhmmss"/>
+    <param name="MaxFileSize" value="1M"/>
+    <layouts>
+      <layout level="Fatal">[%yy-%mm-%dd %h:%mi:%s][%threadid] %message%br%e%br%trace%br</layout>
+      <layout level="Error">[%yy-%mm-%dd %h:%mi:%s][%threadid] %message%br%e%br%trace%br</layout>
+      <layout level="Debug">[%yy-%mm-%dd %h:%mi:%s][%threadid] %message%br</layout>
+      <layout level="Info">[%yy-%mm-%dd %h:%mi:%s][%threadid] %message%br</layout>
+    </layouts>
+  </Appender>  
+</Lib4NetLog>
+
